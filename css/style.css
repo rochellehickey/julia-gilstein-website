@@ -114,6 +114,7 @@ section {
 
 .button {
   display: inline-block;
+  *display: inline; *zoom: 1; /* ie7 fix */
   background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
   border: 1px solid #200000;
@@ -155,6 +156,7 @@ section {
 
 .horizontal-list li {
   display: inline-block;
+  *display: inline; *zoom: 1; /* ie7 fix */
   text-decoration: none;
   list-style-type: none;
   vertical-align: top;
@@ -313,6 +315,7 @@ nav .horizontal-list li a {
 
   nav .horizontal-list li {
     display: inline-block;
+    *display: inline; *zoom: 1; /* ie7 fix */
     margin: 0 2.5% 16px 2.5% !important; /* over-write :first-child rule from above */
     width: 45%;
   }
@@ -484,6 +487,7 @@ nav .horizontal-list li a {
 
 .services-list li {
   display: inline-block;
+  *display: inline; *zoom: 1; /* ie7 fix */
   width: 200px;
   font-size: 16px;
   font-size: 1rem;
