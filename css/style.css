@@ -63,9 +63,15 @@ h3 {
 
 p {
   line-height: 1.6;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+       -o-hyphens: auto;
+          hyphens: auto;
 }
 
 li {
+  line-height: 1.6;
   margin: 5px 0 0 0;
 }
 
@@ -81,23 +87,21 @@ a {
   border-bottom: 2px dotted;
 }
 
-a:hover {
-  color: #214b54;
-}
-
-a:active {
+a:hover,
+a:active,
+a:focus {
   color: #214b54;
 }
 
 main {
   max-width: 914px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 section {
   background-color: #dfdccd;
-  padding: 20px 50px 30px 50px;
+  padding: 20px 30px 30px 30px;
   margin-bottom: 30px;
 }
 
@@ -109,24 +113,38 @@ section {
 
 .button {
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
-  border: 2px solid #200000;
+  border: 1px solid #200000;
   padding: 10px;
   font-family: 'Rosario', 'Times New Roman', sans-serif;
   font-size: 19px;
   font-size: 1.2rem;
   color: #200000;
   margin: 10px 10px 0 0;
+  position: relative;
+  transition: all 0.2s ease-in-out;
 }
 
-.button:hover {
+.button:before {
+  content: "";
+  border: 1px solid transparent;
+  position: absolute;
+  top: 3px; right: 3px; bottom: 3px; left: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
   background-color: #F6F4EC;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.button:active {
-  background-color: #214b54;
-  color: #F6F4EC;
-  border: 2px solid #F6F4EC;
+.button:hover:before,
+.button:active:before,
+.button:focus:before {
+  border-color: black;
 }
 
 .horizontal-list {
@@ -167,7 +185,7 @@ header {
   background-color: #b4bfc1;
   overflow: visible;
   margin: 0 -20px;
-  padding: 20px;
+  padding: 30px;
 }
 
 header .container {
@@ -179,33 +197,41 @@ header .container {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 98%;
-  width: 300px;
-  height: 400px;
+  width: 36%;
+  height: 0;
+  padding-bottom: 48%;
   float: left;
   text-indent: -9999px;
   overflow: hidden;
   margin: 0;
-  display: none; /* fix this later */
 }
 
-.is-scrolled .logo {
+/*.is-scrolled .logo {
   background-image: url("../img/horizontal-logo.png");
   width: 200px;
   height: 80px;
-}
+}*/
 
 nav {
+  width: 60%;
   float: right;
-  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 nav .horizontal-list {
   font-size: 0;
+  text-align: right;
 }
 
 nav .horizontal-list li {
   font-size: 16px;
   font-size: 1rem;
+  margin-left: 2%;
+  width: 23.5%;
+}
+
+nav .horizontal-list li:first-child {
+  margin-left: 0;
 }
 
 nav .horizontal-list li a {
@@ -213,76 +239,97 @@ nav .horizontal-list li a {
 }
 
 .button.nav {
+  text-align: center;
   vertical-align: top;
   font-size: 19px;
   font-size: 1.2rem;
-  width: 100px;
-  margin: 0 0 0 10px;
+  margin: 0;
 }
 
-@media screen and (max-width: 47.5em) { /* 760px */
-  .is-scrolled .logo {
+.about {
+  padding-left: 40%;
+}
+
+.about p {
+  line-height: 1.75;
+  margin-top: 0;
+  text-align: left;
+}
+
+.about p:first-child:first-letter {
+  font-family: 'Monsieur La Doulaise';
+  font-size: 36px;
+  float: left;
+  line-height: .7;
+}
+
+@media screen and (max-width: 43.75em) { /* 700px */
+  header {
+    padding-top: 20px;
+  }
+
+  .logo {
+    background-image: url("../img/horizontal-logo.png");
+    background-size: 98%;
+    width: 36%;
+    height: 0;
+    padding-bottom: 15%;
     float: none;
     margin: 0 auto;
   }
 
-  .is-scrolled nav {
+  nav {
     float: none;
-  }
-
-  .is-scrolled .button.nav {
-    margin: 0 5px;
-  }
-}
-
-@media screen and (max-width: 33.75em) { /* 540px */
-  .is-scrolled nav {
-    margin-top: 10px;
-  }
-
-  .is-scrolled nav li {
-    width: 40%;
-    margin: 14px 2.5% 0 2.5%;
-  }
-
-  .is-scrolled nav .horizontal-list li {
-    display: inline-block;
-  }
-
-  .is-scrolled .button.nav {
     width: 100%;
-    font-size: 16px;
-    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .about {
+    padding: 0;
   }
 }
 
-@media screen and (max-width: 43.125em) { /* 690px */
-
+@media screen and (max-width: 37.5em) { /* 600px */
+  .logo {
+    background-size: 98%;
+    width: 50%;
+    padding-bottom: 21%;
+  }
 }
 
 @media screen and (max-width: 30em) { /* 480px */
+  .logo {
+    background-size: 98%;
+    width: 50%;
+    padding-bottom: 21%;
+  }
 
+  nav {
+    margin-bottom: 10px;
+  }
+
+  nav .horizontal-list li {
+    display: inline-block;
+    margin: 0 2.5% 16px 2.5% !important; /* over-write :first-child rule from above */
+    width: 45%;
+  }
+
+  .button.nav {
+    font-size: 16px;
+    font-size: 1rem;
+    height: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
 }
 
-/* About Section ============================================================ */
-/* ========================================================================== */
-
-.about {
-  padding: 0;
-  background-color: #b4bfc1;
-  overflow: hidden;
-  margin: 0 -20px;
+@media screen and (max-width: 25em) { /* 400px */
+  .logo {
+    background-size: 98%;
+    width: 75%;
+    padding-bottom: 31%;
+  }
 }
-
-.about p {
-  margin-top: 0;
-}
-
-.about .right {
-  width: 50%;
-  float: right;
-}
-
 
 /* Example Blocks =========================================================== */
 /* ========================================================================== */
@@ -292,7 +339,7 @@ nav .horizontal-list li a {
   padding: 20px 40px 10px 250px;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-right: -50px;
+  margin-right: -30px;
   min-height: 230px;
   background-color: #b4bfc1;
 }
@@ -368,35 +415,16 @@ nav .horizontal-list li a {
   }
 
   .example .button {
-    position: static;
+    position: relative;
+    top: auto; right: auto; bottom: auto; left: auto;
   }
 }
 
 @media screen and (max-width: 30em) { /* 480px */
   .example {
-    margin: 20px 0 0 0;
-  }
-
-  .example .button {
-    position: absolute;
-    width: 50%;
-    margin-top: 22px;
-    margin-left: -10px;
+    margin: 20px -20px;
   }
 }
-
-@media screen and (max-width: 26.875em) { /* 430px */
-  .example {
-    margin: 20px -20px 0 -20px;
-  }
-
-  .example .button {
-    width: 35%;
-    margin-top: 12px;
-    margin-left: -15px;
-  }
-}
-
 
 /* Testimonial Blocks ======================================================= */
 /* ========================================================================== */
@@ -462,6 +490,7 @@ nav .horizontal-list li a {
   font-size: 1rem;
   vertical-align: top;
   padding: 0 5px;
+  line-height: 1.6
 }
 
 .services-list li a:before {
@@ -471,15 +500,18 @@ nav .horizontal-list li a {
   font-style: normal;
   font-size: 50px;
   font-size: 3.125rem;
-  line-height: 135px;
+  line-height: 2.6;
   width: 135px;
   height: 135px;
   border: 5px solid #7e8744;
   border-radius: 50%;
   margin: 20px auto 8px auto;
+  transition: all 0.2s ease-in-out;
 }
 
-.services-list li a:hover:before {
+.services-list li a:hover:before,
+.services-list li a:active:before,
+.services-list li a:focus:before {
   background-color: #7e8744;
   color: #dfdccd;
 }
@@ -523,12 +555,7 @@ nav .horizontal-list li a {
   .services-list li a:before {
     width: 120px;
     height: 120px;
-  }
-}
-
-@media screen and (max-width: 30em) { /* 480px */
-  .services-list li a:before {
-    line-height: 125px;
+    line-height: 2.3;
   }
 }
 
