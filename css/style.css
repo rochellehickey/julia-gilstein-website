@@ -38,6 +38,7 @@ html { box-sizing: border-box; }
 body {
   font-size: 100%;
   font-family: 'Libre Baskerville', 'Times New Roman', serif;
+  font-weight: 400;
   color: #200000;
   background: #537880 url("../img/wallpaper.png");
   padding: 0 20px 0 20px;
