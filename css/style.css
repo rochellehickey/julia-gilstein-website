@@ -257,13 +257,6 @@ nav .horizontal-list li a {
   text-align: left;
 }
 
-.about p:first-child:first-letter {
-  font-family: 'Monsieur La Doulaise';
-  font-size: 36px;
-  float: left;
-  line-height: .7;
-}
-
 @media screen and (max-width: 43.75em) { /* 700px */
   header {
     padding-top: 20px;
