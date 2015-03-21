@@ -207,6 +207,10 @@ header .container {
   margin: 0;
 }
 
+.lt-ie9 .logo {
+  background-image: url("../img/stacked-logo-for-ie8.png");
+}
+
 nav {
   width: 60%;
   float: right;
@@ -271,6 +275,10 @@ nav .horizontal-list li a {
     padding-bottom: 15%;
     float: none;
     margin: 0 auto;
+  }
+
+  .lt-ie9 .logo {
+    background-image: url("../img/horizontal-logo-for-ie8.png");
   }
 
   nav {
