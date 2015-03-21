@@ -206,12 +206,6 @@ header .container {
   margin: 0;
 }
 
-/*.is-scrolled .logo {
-  background-image: url("../img/horizontal-logo.png");
-  width: 200px;
-  height: 80px;
-}*/
-
 nav {
   width: 60%;
   float: right;
@@ -359,10 +353,6 @@ nav .horizontal-list li a {
   left: 0;
   bottom: 0;
   width: 214px;
-  color: #b4bfc1;
-  text-align: right;
-  display: table-cell;
-  vertical-align: bottom;
   background-repeat: no-repeat;
   background-size: auto 120px;
   background-position: right bottom;
