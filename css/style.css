@@ -506,6 +506,7 @@ nav .horizontal-list li a {
   border-radius: 50%;
   margin: 20px auto 8px auto;
   transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 
 .services-list li a:hover:before,
