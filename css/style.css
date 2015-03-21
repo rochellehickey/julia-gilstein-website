@@ -1,25 +1,52 @@
-* {
-  box-sizing: border-box;
-}
+/* CSS Normalize (slimmed down) ============================================= */
+/* ========================================================================== */
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
+html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+
+html, body { margin: 0; padding: 0; }
+
+/* Correct `block` display not defined for any HTML5 element in IE 8/9.
+Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+Correct `block` display not defined for `main` in IE 11. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/* Remove the gray background color from active links in IE 10. */
+a { background-color: transparent; }
+
+/* Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover { outline: 0; }
+
+/* Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+
+/* Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+b, strong { font-weight: bold; }
+
+/* Remove border when inside `a` element in IE 8/9/10. */
+img { border: 0; }
+
+
+/* Box model that doesn't suck ============================================== */
+/* ========================================================================== */
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+/* Base styles ============================================================== */
+/* ========================================================================== */
 
 body {
-  font-size: 1em;
-  font-family: 'Libre Baskerville', serif;
-  line-height: 1.6em;
+  font-size: 100%;
+  font-family: 'Libre Baskerville', 'Times New Roman', serif;
   color: #200000;
   background: #537880 url("../img/wallpaper.png");
   padding: 0 20px 0 20px;
 }
 
 h1, h2, h3 {
-  font-family: 'Rosario', sans-serif;
+  font-family: 'Rosario', Arial, sans-serif;
   font-weight: normal;
-  line-height: 1.6em;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -27,47 +54,13 @@ h2 {
   font-size: 2.5em;
 }
 
-h2 a {
-  font-size: 0.35em;
-  float: right;
-  height: 45px;
-}
-
-.hover-reveal-back-to-top {
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid black;
-  position: relative;
-  opacity: 0.3;
-  margin-top: 15px;
-}
-
-.hover-text-back-to-top {
-  display: block;
-  position: absolute;
-  width: 60px;
-  bottom: -65px;
-  transition: all .5s ease-in-out;
-  opacity: 0;
-  left: -30px;
-  text-align: center;
-}
-
-.hover-reveal-back-to-top:hover .hover-text-back-to-top {
-  bottom: -57px;
-  opacity: 1;
-}
-
-.hover-reveal-back-to-top:hover {
-  opacity: 1;
-}
-
 h3 {
   font-size: 1.75em;
   line-height: 1.3em;
+}
+
+p {
+  line-height: 1.6;
 }
 
 li {
@@ -94,44 +87,21 @@ a:active {
   color: #214b54;
 }
 
-footer a {
-  color: #dfdccd;
+main {
+  max-width: 914px;
+  margin: 0 auto;
 }
 
-footer {
-  background: #a16d33;
-  margin: 0 -20px;
-  margin-top: 30px;
-  padding: 5px 0;
-  color: #dfdccd;
-  font-family: 'Rosario', sans-serif;
+section {
+  background-color: #dfdccd;
+  padding: 20px 50px 30px 50px;
+  margin-bottom: 30px;
 }
 
-header {
-  background-color: #b4bfc1;
-  height: 166px;
-  overflow: visible;
-  margin: 0 -20px 0 -20px;
-}
-
-#home {
-  width: 100%;
-  height: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.logo {
-  background-image: url("../img/JGilstein-Logo-Stacked.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #b4bfc1;
-  width: 257px;
-  height: 301px;
-  text-indent: -9999px;
-  overflow: hidden;
-  display: inline-block;
-  margin: 0 20px 20px 20px;
+.container {
+  margin: 0 auto;
+  max-width: 914px;
+  text-align: center;
 }
 
 .button {
@@ -139,7 +109,7 @@ header {
   text-decoration: none;
   border: 2px solid #200000;
   padding: 10px;
-  font-family: 'Rosario', sans-serif;
+  font-family: 'Rosario', 'Times New Roman', sans-serif;
   font-size: 1.2em;
   color: #200000;
   margin: 10px 10px 0 0;
@@ -155,6 +125,54 @@ header {
   border: 2px solid #F6F4EC;
 }
 
+.horizontal-list {
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  text-decoration: none;
+  list-style-type: none;
+  vertical-align: top;
+}
+
+/* Header =================================================================== */
+/* ========================================================================== */
+
+header {
+  background-color: #b4bfc1;
+  height: 166px;
+  overflow: visible;
+  margin: 0 -20px 0 -20px;
+}
+
+.logo {
+  background-image: url("../img/JGilstein-Logo-Stacked.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #b4bfc1;
+  width: 257px;
+  height: 301px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 20px 20px 20px;
+}
+
+nav .horizontal-list {
+  font-size: 0;
+}
+
+nav .horizontal-list li {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+nav .horizontal-list li a {
+  display: block;
+}
+
 .button.nav {
   vertical-align: top;
   margin: 85px 10px 0 10px;
@@ -162,40 +180,12 @@ header {
   width: 100px;
 }
 
-.horizontal {
-  padding: 0;
-  margin: 0;
-}
-
-nav .horizontal {
-  font-size: 0;
-}
-
-.horizontal li {
-  display: inline-block;
-  text-decoration: none;
-  list-style-type: none;
-  vertical-align: top;
-}
-
-nav .horizontal li {
-  font-size: 16px;
-  font-size: 1rem;
-}
-
-nav .horizontal li a {
-  display: block;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 914px;
-  text-align: center;
-}
-
 header .container {
   max-width: 100%;
 }
+
+/* Example Blocks =========================================================== */
+/* ========================================================================== */
 
 .example {
   position: relative;
@@ -232,125 +222,43 @@ header .container {
   background-position: right bottom;
 }
 
-.example-yellow:before {
-  background-color: #a16d33;
-}
+/* set example colors with these classes */
+.example-yellow:before { background-color: #a16d33; }
+.example-red:before {    background-color: #8d332a; }
+.example-blue:before {   background-color: #537880; }
+.example-green:before {  background-color: #7e8744; }
 
-.example-red:before {
-  background-color: #8d332a;
-}
+/* set example illustrative letter with these classes */
+.example-A:before { background-image: url("../img/A.png"); }
+.example-B:before { background-image: url("../img/B.png"); }
+.example-C:before { background-image: url("../img/C.png"); }
+.example-D:before { background-image: url("../img/D.png"); }
+.example-E:before { background-image: url("../img/E.png"); }
+.example-F:before { background-image: url("../img/F.png"); }
+.example-G:before { background-image: url("../img/G.png"); }
+.example-H:before { background-image: url("../img/H.png"); }
+.example-I:before { background-image: url("../img/I.png"); }
+.example-J:before { background-image: url("../img/J.png"); }
+.example-K:before { background-image: url("../img/K.png"); }
+.example-L:before { background-image: url("../img/L.png"); }
+.example-M:before { background-image: url("../img/M.png"); }
+.example-N:before { background-image: url("../img/N.png"); }
+.example-O:before { background-image: url("../img/O.png"); }
+.example-P:before { background-image: url("../img/P.png"); }
+.example-Q:before { background-image: url("../img/Q.png"); }
+.example-R:before { background-image: url("../img/R.png"); }
+.example-S:before { background-image: url("../img/S.png"); }
+.example-T:before { background-image: url("../img/T.png"); }
+.example-U:before { background-image: url("../img/U.png"); }
+.example-V:before { background-image: url("../img/V.png"); }
+.example-W:before { background-image: url("../img/W.png"); }
+.example-X:before { background-image: url("../img/X.png"); }
+.example-Y:before { background-image: url("../img/Y.png"); }
+.example-Z:before { background-image: url("../img/Z.png"); }
 
-.example-blue:before {
-  background-color: #537880;
-}
 
-.example-green:before {
-  background-color: #7e8744;
-}
-
-.example-A:before {
-  background-image: url("../img/A.png");
-}
-
-.example-B:before {
-  background-image: url("../img/B.png");
-}
-
-.example-C:before {
-  background-image: url("../img/C.png");
-}
-
-.example-D:before {
-  background-image: url("../img/D.png");
-}
-
-.example-E:before {
-  background-image: url("../img/E.png");
-}
-
-.example-F:before {
-  background-image: url("../img/F.png");
-}
-
-.example-G:before {
-  background-image: url("../img/G.png");
-}
-
-.example-H:before {
-  background-image: url("../img/H.png");
-}
-
-.example-I:before {
-  background-image: url("../img/I.png");
-}
-
-.example-J:before {
-  background-image: url("../img/J.png");
-}
-
-.example-K:before {
-  background-image: url("../img/K.png");
-}
-
-.example-L:before {
-  background-image: url("../img/L.png");
-}
-
-.example-M:before {
-  background-image: url("../img/M.png");
-}
-
-.example-N:before {
-  background-image: url("../img/N.png");
-}
-
-.example-O:before {
-  background-image: url("../img/O.png");
-}
-
-.example-P:before {
-  background-image: url("../img/P.png");
-}
-
-.example-Q:before {
-  background-image: url("../img/Q.png");
-}
-
-.example-R:before {
-  background-image: url("../img/R.png");
-}
-
-.example-S:before {
-  background-image: url("../img/S.png");
-}
-
-.example-T:before {
-  background-image: url("../img/T.png");
-}
-
-.example-U:before {
-  background-image: url("../img/U.png");
-}
-
-.example-V:before {
-  background-image: url("../img/V.png");
-}
-
-.example-W:before {
-  background-image: url("../img/W.png");
-}
-
-.example-X:before {
-  background-image: url("../img/X.png");
-}
-
-.example-Y:before {
-  background-image: url("../img/Y.png");
-}
-
-.example-Z:before {
-  background-image: url("../img/Z.png");
-}
+/* Testimonial Blocks ======================================================= */
+/* ========================================================================== */
 
 .testimonial {
   position: relative;
@@ -370,7 +278,10 @@ header .container {
   background-position: left top;
 }
 
-.services {
+/* Services List ============================================================ */
+/* ========================================================================== */
+
+.services-list {
   color: #7e8744;
   font-style: italic;
   text-decoration: none;
@@ -380,7 +291,7 @@ header .container {
   text-align: center;
 }
 
-.services li {
+.services-list li {
   display: inline-block;
   width: 200px;
   font-size: 16px;
@@ -389,7 +300,7 @@ header .container {
   padding: 0 5px;
 }
 
-.services li a:before {
+.services-list li a:before {
   content: "";
   color: #7e8744;
   display: block;
@@ -403,70 +314,68 @@ header .container {
   margin: 20px auto 8px auto;
 }
 
-.services li a:hover:before {
+.services-list li a:hover:before {
   background-color: #7e8744;
   color: #dfdccd;
 }
 
-.services li .a:before {
-  content: "A";
-}
+/* set services list item ornamental letter with these classes */
+.services-list li .a:before {   content: "A"; }
+.services-list li .ae:before {  content: "AE"; }
+.services-list li .b:before {   content: "B"; }
+.services-list li .c:before {   content: "C"; }
+.services-list li .d:before {   content: "D"; }
+.services-list li .e:before {   content: "E"; }
+.services-list li .f:before {   content: "F"; }
+.services-list li .g:before {   content: "G"; }
+.services-list li .h:before {   content: "H"; }
+.services-list li .i:before {   content: "I"; }
+.services-list li .j:before {   content: "J"; }
+.services-list li .k:before {   content: "K"; }
+.services-list li .l:before {   content: "L"; }
+.services-list li .m:before {   content: "M"; }
+.services-list li .n:before {   content: "N"; }
+.services-list li .o:before {   content: "O"; }
+.services-list li .pp:before {  content: "PP"; }
+.services-list li .p:before {   content: "P"; }
+.services-list li .q:before {   content: "Q"; }
+.services-list li .r:before {   content: "R"; }
+.services-list li .s:before {   content: "S"; }
+.services-list li .t:before {   content: "T"; }
+.services-list li .u:before {   content: "U"; }
+.services-list li .v:before {   content: "V"; }
+.services-list li .w:before {   content: "W"; }
+.services-list li .x:before {   content: "X"; }
+.services-list li .y:before {   content: "Y"; }
+.services-list li .z:before {   content: "Z"; }
+.services-list li .amp:before { content: "\0026"; }
 
-.services li .w:before {
-  content: "W";
-}
 
-.services li .b:before {
-  content: "B";
-}
-
-.services li .p:before {
-  content: "P";
-}
-
-.services li .e:before {
-  content: "E";
-}
-
-.services li .r:before {
-  content: "R";
-}
-
-.services li .f:before {
-  content: "F";
-}
-
-.services li .ae:before {
-  content: "AE";
-}
-
-.services li .pp:before {
-  content: "PP";
-}
-
-.services li .amp:before {
-  content: "\0026";
-}
-
-main {
-  max-width: 914px;
-  margin: 0 auto;
-}
-
-section {
-  background-color: #dfdccd;
-  padding: 20px 50px 30px 50px;
-  margin-bottom: 30px;
-}
+/* About Section ============================================================ */
+/* ========================================================================== */
 
 .about {
   padding-top: 135px;
 }
 
-.go-home {
-  text-decoration: none;
-  border-bottom: none;
+/* Footer styles ============================================================ */
+/* ========================================================================== */
+
+footer a {
+  color: #dfdccd;
 }
+
+footer {
+  background: #a16d33;
+  margin: 0 -20px;
+  margin-top: 30px;
+  padding: 5px 0;
+  color: #dfdccd;
+  font-family: 'Rosario', sans-serif;
+}
+
+/* Media Queries ============================================================ */
+/* ========================================================================== */
 
 @media (max-width: 795px) {
   .testimonial {
@@ -585,11 +494,11 @@ section {
     margin: 0 auto 10px auto;
   }
 
-  .horizontal li {
+  .horizontal-list li {
     display: block;
   }
 
-  .horizontal {
+  .horizontal-list {
     padding-bottom: 10px;
   }
 
