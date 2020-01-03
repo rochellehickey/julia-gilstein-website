@@ -38,6 +38,10 @@ header {
   background-color: #b4bfc1;
 }
 
+section {
+  background-color: #dfdccd;
+}
+
 /* ------------------------------------- */
 /*           COMPONENTS INDEX            */
 /* ------------------------------------- */
@@ -53,7 +57,7 @@ h2 {
   font-size: 1.8rem;
   line-height: 2.6rem;
   color: #200000;
-  margin: 60px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
 h3 {
@@ -61,7 +65,7 @@ h3 {
   font-size: 1.3rem;
   line-height: 1.8rem;
   color: #200000;
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 p,
@@ -100,22 +104,16 @@ blockquote {
   margin: 0;
 }
 
-nav {
+.horizontal-list {
   width: 100%;
+  padding: 0;
   margin: 20px 0;
 }
 
-nav .horizontal-list li:first-child {
-  margin-left: 0;
-}
-
-nav .horizontal-list li a {
+.horizontal-list li a {
   display: block;
-}
-
-.horizontal-list {
-  padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .horizontal-list li {
@@ -124,7 +122,6 @@ nav .horizontal-list li a {
   padding: 5px 0;
   font-size: 16px;
   font-size: 1rem;
-  width: 100%;
 }
 
 .button.nav {
@@ -188,33 +185,33 @@ nav .horizontal-list li a {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   padding: 20px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .contact {
-  width: 100%;
+  width: 90%;
   padding: 20px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .services {
-  width: 100%;
+  width: 90%;
   padding: 20px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .editorial {
-  width: 100%;
+  width: 90%;
   padding: 20px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .writing {
-  width: 100%;
+  width: 90%;
   padding: 20px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .julia-gilstein-logo {

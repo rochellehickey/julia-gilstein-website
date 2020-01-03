@@ -2,22 +2,16 @@
 //               NAVIGATION
 // -------------------------------------
 
-nav {
+.horizontal-list {
   width: 100%;
+  padding: 0;
   margin: 20px 0;
 }
 
-nav .horizontal-list li:first-child {
-  margin-left: 0;
-}
-
-nav .horizontal-list li a {
+.horizontal-list li a {
   display: block;
-}
-
-.horizontal-list {
-  padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 .horizontal-list li {
@@ -26,7 +20,6 @@ nav .horizontal-list li a {
   padding: 5px 0;
   font-size: 16px;
   font-size: 1rem;
-  width: 100%;
 }
 
 .button.nav {
