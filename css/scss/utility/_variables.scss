@@ -23,13 +23,14 @@ $copy-size           : 1.2rem;
 $quote-author-size   : .9rem;
 $copyright-size      : .9rem;
 $button-font-size    : .9rem;
+$footer-font-size    : .9rem;
 
 $primary-hdln-line-height   : 3.4rem;
 $secondary-hdln-line-height : 2.6rem;
 $tertiary-hdln-line-height  : 1.8rem;
 $copy-size-line-height      : 2rem;
 $quote-author-line-height   : 1.2rem;
-$copyright-line-height      : 1rem;
+$footer-line-height         : 1.3rem;
 
 
 
@@ -49,6 +50,7 @@ $canvas       : #dfdccd;
 $brown        : #200000;
 $red-sun      : #8d332a;
 $copper       : #a16d33;
+$moss         : #7e8744;
 $white        : #FFF;
 
 $primary-hdln-color        : $brown;
@@ -57,16 +59,27 @@ $tertiary-hdln-color       : $brown;
 $font-color                : $brown;
 $font-nav-color            : $brown;
 $button-text-color         : $brown;
-$button-text-chosen-color  : $brown;
 $blockquotes-color         : $red-sun;
 $blockquote-quotemark-color: $red-sun;
+$services-color            : $moss;
 $footer-text-color         : $white;
 
 $link-color                : $stormy-seas;
 $link-focus-color          : $into-the-deep;
 
+$services-color-hover      : $canvas;
+
 $body-base-bg-color        : $stormy-seas;
 $header-bg-color           : $storm-clouds;
 $section-bg-color          : $canvas;
+$services-bg-color         : $moss;
+$examples-bg-color         : $storm-clouds;
 $footer-bg-color           : $copper;
+
+$services-line-color       : $moss;
+
+$examples-list-color-1     : $copper;
+$examples-list-color-2     : $red-sun;
+$examples-list-color-3     : $stormy-seas;
+$examples-list-color-4     : $moss;
 

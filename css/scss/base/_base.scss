@@ -29,16 +29,19 @@ section {
   background-color: $section-bg-color;
 }
 
-footer a {
-  color: #dfdccd;
-}
-
 footer {
-  color: $footer-text-color;
   background: $footer-bg-color;
   width: 100%;
   margin: 0;
   text-align: center;
+}
+
+footer p,
+footer a {
+  color: $footer-text-color;
+  font-family: $font-stack-header;
+  font-size: $footer-font-size;
+  line-height: $footer-line-height;
 }
 
 
