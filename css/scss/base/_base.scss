@@ -29,6 +29,18 @@ section {
   background-color: $section-bg-color;
 }
 
+footer a {
+  color: #dfdccd;
+}
+
+footer {
+  color: $footer-text-color;
+  background: $footer-bg-color;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
 
 
 // ---------- Media Queries -------------

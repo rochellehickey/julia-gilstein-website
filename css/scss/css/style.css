@@ -42,6 +42,18 @@ section {
   background-color: #dfdccd;
 }
 
+footer a {
+  color: #dfdccd;
+}
+
+footer {
+  color: #FFF;
+  background: #a16d33;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
 /* ------------------------------------- */
 /*           COMPONENTS INDEX            */
 /* ------------------------------------- */
@@ -228,6 +240,8 @@ blockquote p {
 
 .quotemarks {
   display: block;
+  margin-top: 60px;
+  margin-bottom: -80px;
 }
 
 /*# sourceMappingURL=style.css.map */
