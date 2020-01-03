@@ -56,18 +56,21 @@ button {
   font-size: $button-font-size;
 }
 
-blockquote {
+blockquote p {
   font-style: italic;
   color: $blockquotes-color;
-  margin: 0;
+  padding: 0;
+  margin: 10px 0;
 }
 
 
 // ---------- Classes -----------
 
-
-
-
+.quote-author {
+  font-size: $quote-author-size;
+  line-height: $quote-author-line-height;
+  text-align: right;
+}
 
 // --------- Extends ------------
 

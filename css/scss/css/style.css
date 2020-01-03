@@ -98,10 +98,17 @@ button {
   font-size: 0.9rem;
 }
 
-blockquote {
+blockquote p {
   font-style: italic;
   color: #8d332a;
-  margin: 0;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.quote-author {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-align: right;
 }
 
 .horizontal-list {
@@ -217,6 +224,10 @@ blockquote {
 .julia-gilstein-logo {
   width: 100%;
   height: auto;
+}
+
+.quotemarks {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
