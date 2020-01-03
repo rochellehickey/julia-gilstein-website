@@ -1,0 +1,64 @@
+// -------------------------------------
+//               NAVIGATION
+// -------------------------------------
+
+nav {
+  width: 100%;
+  margin: 20px 0;
+}
+
+nav .horizontal-list li:first-child {
+  margin-left: 0;
+}
+
+nav .horizontal-list li a {
+  display: block;
+}
+
+.horizontal-list {
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list li {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px 0;
+  font-size: 16px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.button.nav {
+  text-align: center;
+  font-size: 19px;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+// ------------ Sticky Header ------------
+
+.scroll-down .sticky-header {
+  transition: .5s;
+}
+
+.scroll-up .sticky-header {
+  position: fixed;
+  top: 0;
+  transform: none;
+  transition: .5s;
+  background: $header-bg-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  z-index: 100;
+}
+
+
+// ------------ Media Queries --------------
+
+@media (min-width: $media-screen-med) {
+
+}
+
+@media (min-width: $media-screen-lg) {
+
+}
