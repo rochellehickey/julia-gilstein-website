@@ -2,23 +2,19 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 40px;
-  color: #6A5D93;
+  color: #200000;
 }
 
 .headline--secondary {
   font-size: 1.5rem;
   font-weight: 400;
   margin: 20px 0;
-  color: #0F6489;
+  color: #200000;
 }
 
 .link {
-  color: #6A5D93;
+  color: #537880;
   font-weight: 400;
-}
-
-a:focus {
-  outline: 2px solid #0F6489;
 }
 
 * {
@@ -33,7 +29,7 @@ body {
 }
 
 body {
-  background: #537880 url("../img/wallpaper.png");
+  background: #537880 url("../../../img/wallpaper.png");
 }
 
 header {
@@ -49,14 +45,14 @@ h1 {
   font-family: "Rosario", sans-serif;
   font-size: 3rem;
   line-height: 3.4rem;
-  color: #6A5D93;
+  color: #200000;
 }
 
 h2 {
   font-family: "Rosario", sans-serif;
   font-size: 1.8rem;
   line-height: 2.6rem;
-  color: #0F6489;
+  color: #200000;
   margin: 60px 0 10px 0;
 }
 
@@ -64,7 +60,7 @@ h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  color: #0F6489;
+  color: #200000;
   margin: 20px 0;
 }
 
@@ -74,16 +70,34 @@ li {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2rem;
-  color: #29291F;
+  color: #200000;
 }
 
 p {
   margin: 20px 0;
 }
 
+a {
+  color: #537880;
+  text-decoration: none;
+  border-bottom: 2px dotted;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #214b54;
+}
+
 button {
   font-family: "Rosario", sans-serif;
   font-size: 0.9rem;
+}
+
+blockquote {
+  font-style: italic;
+  color: #8d332a;
+  margin: 0;
 }
 
 nav {
@@ -129,7 +143,7 @@ nav .horizontal-list li a {
   top: 0;
   transform: none;
   transition: 0.5s;
-  background: #FFF;
+  background: #b4bfc1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   z-index: 100;
 }
@@ -191,61 +205,20 @@ nav .horizontal-list li a {
   margin: 0 auto;
 }
 
+.editorial {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.writing {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
 .julia-gilstein-logo {
   width: 100%;
-  height: auto;
-}
-
-.contact svg {
-  height: 100px;
-  margin-right: 20px;
-  fill: #CFECCE;
-}
-.contact svg:active {
-  fill: #FFF;
-}
-
-.contact a:hover path {
-  fill: #FFF;
-}
-
-.contact svg circle {
-  fill: #77BDB5;
-}
-
-.footer-contact-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-.footer-svg {
-  text-decoration: none;
-  width: 50%;
-  max-width: 75px;
-  fill: #FFF;
-  transition: transform 0.5s;
-}
-
-.footer-svg circle {
-  fill: #6A5D93;
-}
-
-.footer-svg:hover {
-  transform: rotate(0.1turn) scale(1.1);
-}
-
-.footer-svg:active {
-  transform: rotate(0.1turn);
-}
-
-.footer-contact {
-  width: 50%;
   height: auto;
 }
 

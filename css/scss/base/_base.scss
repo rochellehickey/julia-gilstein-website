@@ -16,13 +16,13 @@ body {
 }
 
 body {
-  background: #537880 url("../img/wallpaper.png");
+  background: $body-base-bg-color url("../../../img/wallpaper.png");
 }
 
 header {
   width: 100%;
   margin: 0;
-  background-color: #b4bfc1;
+  background-color: $header-bg-color;
 }
 
 

@@ -39,9 +39,27 @@ p {
   margin: 20px 0;
 }
 
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 2px dotted;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: $link-focus-color;
+}
+
 button {
   font-family: $button-font;
   font-size: $button-font-size;
+}
+
+blockquote {
+  font-style: italic;
+  color: $blockquotes-color;
+  margin: 0;
 }
 
 
