@@ -88,5 +88,14 @@
 }
 
 @media (min-width: $media-screen-lg) {
-
+  .container {
+    width: 75%;
+  }
+  .contact,
+  .services,
+  .editorial,
+  .writing {
+    width: 75%;
+    padding: 20px 40px;
+  }
 }

@@ -28,3 +28,16 @@
 .writing-background-moss {
   background-color: $examples-list-color-4;
 }
+
+
+// ---------- Media Queries -------------
+@media (min-width: $media-screen-lg) {
+  .writing-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .writing-example-container {
+    width: 49%;
+  }
+}

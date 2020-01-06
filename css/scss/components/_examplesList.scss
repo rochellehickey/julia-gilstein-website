@@ -28,3 +28,15 @@
 .example-background-moss {
   background-color: $examples-list-color-4;
 }
+
+// ---------- Media Queries -------------
+@media (min-width: $media-screen-lg) {
+  .editorial-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .example-editorial-container {
+    width: 49%;
+  }
+}

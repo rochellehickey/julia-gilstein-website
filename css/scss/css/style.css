@@ -73,6 +73,13 @@ footer a {
     margin-right: auto;
   }
 }
+@media (min-width: 1024px) {
+  nav {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* ------------------------------------- */
 /*           COMPONENTS INDEX            */
 /* ------------------------------------- */
@@ -307,6 +314,19 @@ blockquote p {
     padding: 20px 40px;
   }
 }
+@media (min-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+
+  .contact,
+.services,
+.editorial,
+.writing {
+    width: 75%;
+    padding: 20px 40px;
+  }
+}
 .julia-gilstein-logo {
   width: 100%;
   height: auto;
@@ -321,7 +341,11 @@ blockquote p {
 @media (min-width: 768px) {
   .julia-gilstein-logo {
     width: 49%;
-    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .julia-gilstein-logo {
+    width: 25%;
   }
 }
 .services-list {
@@ -370,6 +394,17 @@ blockquote p {
   background-color: #7e8744;
 }
 
+@media (min-width: 1024px) {
+  .editorial-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example-editorial-container {
+    width: 49%;
+  }
+}
 .writing-example-container {
   margin: 40px 0;
 }
@@ -395,6 +430,18 @@ blockquote p {
 
 .writing-background-moss {
   background-color: #7e8744;
+}
+
+@media (min-width: 1024px) {
+  .writing-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .writing-example-container {
+    width: 49%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

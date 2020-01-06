@@ -65,7 +65,11 @@ footer a {
 }
 
 @media (min-width: $media-screen-lg) {
-
+  nav {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: $media-screen-xlg) {
