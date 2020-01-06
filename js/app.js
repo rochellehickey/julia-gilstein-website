@@ -1,4 +1,9 @@
 const imageLogo = document.querySelector('.julia-gilstein-logo');
+// sticky header
+const body = document.body;
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
 
 
 // LOGO CHANGE ON PAGE WIDTH

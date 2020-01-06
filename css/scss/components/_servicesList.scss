@@ -23,9 +23,9 @@
 
 .services-list li:hover {
   .circle-container {
-    background-color: $moss;
+    background-color: $circle-container-hover;
   }
   .circle-letter {
-    color: $canvas;
+    color: $circle-letter-color-hover;
   }
 }

@@ -38,11 +38,19 @@
 .scroll-up .sticky-header {
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0;
   transform: none;
   transition: .5s;
   background: $header-bg-color;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   z-index: 100;
+}
+
+.scroll-down .sticky-header {
+  transition: 0.5s;
 }
 
 
@@ -51,11 +59,16 @@
 @media (min-width: $media-screen-med) {
   .horizontal-list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-container .horizontal-list {
+    display: flex;
     flex-direction: column;
   }
-
-}
-
-@media (min-width: $media-screen-lg) {
-
+  .scroll-up .sticky-header {
+    padding: 0 150px;
+  }
 }

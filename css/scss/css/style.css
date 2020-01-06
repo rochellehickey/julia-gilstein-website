@@ -55,27 +55,15 @@ footer a {
   font-size: 0.9rem;
   line-height: 1.3rem;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-.show {
-  display: inline-block;
-}
-
-.hidden {
-  display: none;
+footer .container {
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
   nav {
-    width: 49%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 1024px) {
-  nav {
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -197,6 +185,10 @@ blockquote p {
 .scroll-up .sticky-header {
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0;
   transform: none;
   transition: 0.5s;
   background: #b4bfc1;
@@ -204,10 +196,26 @@ blockquote p {
   z-index: 100;
 }
 
+.scroll-down .sticky-header {
+  transition: 0.5s;
+}
+
 @media (min-width: 768px) {
   .horizontal-list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact-container .horizontal-list {
+    display: flex;
     flex-direction: column;
+  }
+
+  .scroll-up .sticky-header {
+    padding: 0 150px;
   }
 }
 .button {
@@ -304,6 +312,18 @@ blockquote p {
   .container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .nav-and-intro {
+    width: 55%;
+    margin: 0;
+  }
+
+  .about {
+    margin: 0;
   }
 
   .contact,
@@ -313,10 +333,19 @@ blockquote p {
     width: 85%;
     padding: 20px 40px;
   }
+
+  .contact-container {
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
   .container {
     width: 75%;
+  }
+
+  .nav-and-intro {
+    width: 50%;
+    margin: 0;
   }
 
   .contact,
@@ -330,6 +359,7 @@ blockquote p {
 .julia-gilstein-logo {
   width: 100%;
   height: auto;
+  flex-shrink: 0;
 }
 
 .quotemarks {
@@ -340,12 +370,13 @@ blockquote p {
 
 @media (min-width: 768px) {
   .julia-gilstein-logo {
-    width: 49%;
+    width: 40%;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
   .julia-gilstein-logo {
-    width: 25%;
+    width: 45%;
   }
 }
 .services-list {
