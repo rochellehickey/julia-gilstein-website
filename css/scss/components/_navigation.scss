@@ -8,18 +8,18 @@
   margin: 20px 0;
 }
 
-.horizontal-list li a {
-  display: block;
-  margin: 0;
-  text-align: center;
-}
-
 .horizontal-list li {
   list-style: none;
   text-decoration: none;
   padding: 5px 0;
   font-size: 16px;
   font-size: 1rem;
+}
+
+.horizontal-list li a {
+  display: block;
+  margin: 0;
+  text-align: center;
 }
 
 .button.nav {
@@ -49,6 +49,10 @@
 // ------------ Media Queries --------------
 
 @media (min-width: $media-screen-med) {
+  .horizontal-list {
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 

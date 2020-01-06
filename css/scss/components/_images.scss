@@ -15,7 +15,10 @@
 
 // ---------- Media Queries -------------
 @media (min-width: $media-screen-med) {
-
+  .julia-gilstein-logo {
+    width: 49%;
+    height: auto;
+  }
 }
 
 @media (min-width: $media-screen-lg) {

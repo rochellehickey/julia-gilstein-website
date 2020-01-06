@@ -46,7 +46,6 @@ footer {
   background: #a16d33;
   width: 100%;
   margin: 0;
-  text-align: center;
 }
 
 footer p,
@@ -55,8 +54,25 @@ footer a {
   font-family: "Rosario", sans-serif;
   font-size: 0.9rem;
   line-height: 1.3rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* ------------------------------------- */
 /*           COMPONENTS INDEX            */
 /* ------------------------------------- */
@@ -146,18 +162,18 @@ blockquote p {
   margin: 20px 0;
 }
 
-.horizontal-list li a {
-  display: block;
-  margin: 0;
-  text-align: center;
-}
-
 .horizontal-list li {
   list-style: none;
   text-decoration: none;
   padding: 5px 0;
   font-size: 16px;
   font-size: 1rem;
+}
+
+.horizontal-list li a {
+  display: block;
+  margin: 0;
+  text-align: center;
 }
 
 .button.nav {
@@ -181,6 +197,12 @@ blockquote p {
   z-index: 100;
 }
 
+@media (min-width: 768px) {
+  .horizontal-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .button {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.2);
@@ -271,6 +293,20 @@ blockquote p {
   margin: 10px auto;
 }
 
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact,
+.services,
+.editorial,
+.writing {
+    width: 85%;
+    padding: 20px 40px;
+  }
+}
 .julia-gilstein-logo {
   width: 100%;
   height: auto;
@@ -282,6 +318,12 @@ blockquote p {
   margin-bottom: -80px;
 }
 
+@media (min-width: 768px) {
+  .julia-gilstein-logo {
+    width: 49%;
+    height: auto;
+  }
+}
 .services-list {
   color: #7e8744;
   text-decoration: none;

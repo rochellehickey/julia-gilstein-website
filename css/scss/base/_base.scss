@@ -33,7 +33,6 @@ footer {
   background: $footer-bg-color;
   width: 100%;
   margin: 0;
-  text-align: center;
 }
 
 footer p,
@@ -42,13 +41,27 @@ footer a {
   font-family: $font-stack-header;
   font-size: $footer-font-size;
   line-height: $footer-line-height;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
 }
 
 
 
 // ---------- Media Queries -------------
 @media (min-width: $media-screen-med) {
-
+  nav {
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: $media-screen-lg) {

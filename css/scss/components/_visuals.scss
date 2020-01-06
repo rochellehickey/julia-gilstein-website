@@ -73,6 +73,18 @@
 
 @media (min-width: $media-screen-med) {
 
+// ------------ Header --------------
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact,
+  .services,
+  .editorial,
+  .writing {
+    width: 85%;
+    padding: 20px 40px;
+  }
 }
 
 @media (min-width: $media-screen-lg) {
