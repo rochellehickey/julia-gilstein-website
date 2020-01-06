@@ -15,22 +15,26 @@ $font-weight-bold    : 700;
 $body-font           : $font-stack;
 $header-font         : $font-stack-header;
 $button-font         : $font-stack-button;
+$block-title-letter  : $font-stack;
 
-$primary-hdln-size   : 3rem;
-$secondary-hdln-size : 1.8rem;
-$tertiary-hdln-size  : 1.3rem;
-$copy-size           : 1.2rem;
-$quote-author-size   : .9rem;
-$copyright-size      : .9rem;
-$button-font-size    : .9rem;
-$footer-font-size    : .9rem;
+$primary-hdln-size       : 3rem;
+$secondary-hdln-size     : 1.8rem;
+$tertiary-hdln-size      : 1.3rem;
+$copy-size               : 1.2rem;
+$quote-author-size       : .9rem;
+$copyright-size          : .9rem;
+$button-font-size        : .9rem;
+$footer-font-size        : .9rem;
+$circle-letter-font-size : 4rem;
+$block-title-letter-size : 8rem;
 
-$primary-hdln-line-height   : 3.4rem;
-$secondary-hdln-line-height : 2.6rem;
-$tertiary-hdln-line-height  : 1.8rem;
-$copy-size-line-height      : 2rem;
-$quote-author-line-height   : 1.2rem;
-$footer-line-height         : 1.3rem;
+$primary-hdln-line-height       : 3.4rem;
+$secondary-hdln-line-height     : 2.6rem;
+$tertiary-hdln-line-height      : 1.8rem;
+$copy-size-line-height          : 2rem;
+$quote-author-line-height       : 1.2rem;
+$footer-line-height             : 1.3rem;
+$block-title-letter-line-height : 5.5rem;
 
 
 
@@ -63,6 +67,9 @@ $blockquotes-color         : $red-sun;
 $blockquote-quotemark-color: $red-sun;
 $services-color            : $moss;
 $footer-text-color         : $white;
+
+$circle-letter-color       : $moss;
+$block-title-letter-color  : $storm-clouds;
 
 $link-color                : $stormy-seas;
 $link-focus-color          : $into-the-deep;

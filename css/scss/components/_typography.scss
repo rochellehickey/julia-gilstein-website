@@ -66,6 +66,11 @@ blockquote p {
 
 // ---------- Classes -----------
 
+.circle-letter {
+  color: $circle-letter-color;
+  font-size: $circle-letter-font-size;
+}
+
 .quote-author {
   font-size: $quote-author-size;
   line-height: $quote-author-line-height;
@@ -73,10 +78,10 @@ blockquote p {
 }
 
 .block-title-letter {
-  color: $storm-clouds;
-  font-family: $font-stack;
-  font-size: 8rem;
-  line-height: 5.5rem;
+  color: $block-title-letter-color;
+  font-family: $block-title-letter;
+  font-size: $block-title-letter-size;
+  line-height: $block-title-letter-line-height;
   padding-top: 30px;
   margin: 20px 0 0 0;
 }

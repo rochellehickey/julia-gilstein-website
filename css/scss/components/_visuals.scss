@@ -27,6 +27,17 @@
   margin: 10px auto;
 }
 
+.circle-container {
+  width: 140px;
+  height: 140px;
+  margin: 40px auto 5px auto;
+  border: 5px solid $moss;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // ------------ Editorial --------------
 
 .editorial {
@@ -53,7 +64,6 @@
   margin: 10px auto;
 }
 
-// ---------- Testimonials ------------
 
 
 

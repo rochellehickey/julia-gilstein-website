@@ -120,6 +120,11 @@ blockquote p {
   margin: 10px 0;
 }
 
+.circle-letter {
+  color: #7e8744;
+  font-size: 4rem;
+}
+
 .quote-author {
   font-size: 0.9rem;
   line-height: 1.2rem;
@@ -233,6 +238,17 @@ blockquote p {
   margin: 10px auto;
 }
 
+.circle-container {
+  width: 140px;
+  height: 140px;
+  margin: 40px auto 5px auto;
+  border: 5px solid #7e8744;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .editorial {
   width: 90%;
   padding: 20px;
@@ -268,7 +284,6 @@ blockquote p {
 
 .services-list {
   color: #7e8744;
-  font-style: italic;
   text-decoration: none;
   list-style-type: none;
   padding: 0;
@@ -278,156 +293,12 @@ blockquote p {
 
 .services-list li {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  /* ie7 fix */
   width: 200px;
   font-size: 16px;
   font-size: 1rem;
   vertical-align: top;
   padding: 0 5px;
   line-height: 1.6;
-}
-
-.services-list li a:before {
-  content: "";
-  color: #7e8744;
-  display: block;
-  font-style: normal;
-  font-size: 50px;
-  font-size: 3.125rem;
-  line-height: 3;
-  width: 135px;
-  height: 135px;
-  border: 5px solid #7e8744;
-  border-radius: 50%;
-  margin: 20px auto 8px auto;
-  transition: all 0.2s ease-in-out;
-  text-align: center;
-}
-
-.services-list li a:hover:before,
-.services-list li a:active:before,
-.services-list li a:focus:before {
-  background-color: #7e8744;
-  color: #dfdccd;
-}
-
-/* set services list item ornamental letter with these classes */
-.services-list li .a:before {
-  content: "A";
-}
-
-.services-list li .ae:before {
-  content: "AE";
-}
-
-.services-list li .b:before {
-  content: "B";
-}
-
-.services-list li .c:before {
-  content: "C";
-}
-
-.services-list li .d:before {
-  content: "D";
-}
-
-.services-list li .e:before {
-  content: "E";
-}
-
-.services-list li .f:before {
-  content: "F";
-}
-
-.services-list li .g:before {
-  content: "G";
-}
-
-.services-list li .h:before {
-  content: "H";
-}
-
-.services-list li .i:before {
-  content: "I";
-}
-
-.services-list li .j:before {
-  content: "J";
-}
-
-.services-list li .k:before {
-  content: "K";
-}
-
-.services-list li .l:before {
-  content: "L";
-}
-
-.services-list li .m:before {
-  content: "M";
-}
-
-.services-list li .n:before {
-  content: "N";
-}
-
-.services-list li .o:before {
-  content: "O";
-}
-
-.services-list li .pp:before {
-  content: "PP";
-}
-
-.services-list li .p:before {
-  content: "P";
-}
-
-.services-list li .q:before {
-  content: "Q";
-}
-
-.services-list li .r:before {
-  content: "R";
-}
-
-.services-list li .s:before {
-  content: "S";
-}
-
-.services-list li .t:before {
-  content: "T";
-}
-
-.services-list li .u:before {
-  content: "U";
-}
-
-.services-list li .v:before {
-  content: "V";
-}
-
-.services-list li .w:before {
-  content: "W";
-}
-
-.services-list li .x:before {
-  content: "X";
-}
-
-.services-list li .y:before {
-  content: "Y";
-}
-
-.services-list li .z:before {
-  content: "Z";
-}
-
-.services-list li .amp:before {
-  content: "&";
 }
 
 .example-editorial-container {
