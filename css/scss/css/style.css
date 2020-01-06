@@ -457,4 +457,31 @@ blockquote p {
   background-color: #7e8744;
 }
 
+.writing-example-container {
+  margin: 40px 0;
+}
+
+.writing-example {
+  min-height: 230px;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #b4bfc1;
+}
+
+.writing-background-copper {
+  background-color: #a16d33;
+}
+
+.writing-background-red-sun {
+  background-color: #8d332a;
+}
+
+.writing-background-stormy-seas {
+  background-color: #537880;
+}
+
+.writing-background-moss {
+  background-color: #7e8744;
+}
+
 /*# sourceMappingURL=style.css.map */
