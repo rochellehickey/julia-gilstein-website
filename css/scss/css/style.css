@@ -367,6 +367,13 @@ blockquote p {
   line-height: 1.6;
 }
 
+.services-list li:hover .circle-container {
+  background-color: #7e8744;
+}
+.services-list li:hover .circle-letter {
+  color: #dfdccd;
+}
+
 .example-editorial-container {
   margin: 40px 0;
 }

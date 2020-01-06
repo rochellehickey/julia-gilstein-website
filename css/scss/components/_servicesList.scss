@@ -20,3 +20,12 @@
   padding: 0 5px;
   line-height: 1.6;
 }
+
+.services-list li:hover {
+  .circle-container {
+    background-color: $moss;
+  }
+  .circle-letter {
+    color: $canvas;
+  }
+}
